@@ -1,0 +1,49 @@
+*{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-position: center;
+    background-size: cover;
+}
+.card{
+    background-color: #fff;
+    width: 400px;
+    border-radius: 20px;
+}
+.card .music-img img{
+    max-width: 100%;
+    margin-bottom: 1.3rem;
+}
+.card .order{
+    padding: 1.1rem;
+    text-align: center;
+}
+.card .order .order-info{
+    padding-bottom: 1.1rem;
+}
+.card .order .order-info h1{
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+.card .order .order-info p{
+    color: var(--desaturated-blue);
+}
+.card .order .plan{
+    background-color: var(--very-pale-blue);
+}
