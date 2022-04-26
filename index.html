@@ -14,16 +14,15 @@
 	<title>Frontend Mentor | Order summary card</title>
 
 	<style>
-    	.attribution { font-size: 11px; text-align: center; }
-    	.attribution a { color: hsl(228, 45%, 44%); }
+    	
 	</style>
 </head>
 <body>
 	<main>
 		<article class="card">
-			<section class="music-img">
+			<figure class="music-img">
 				<img src="./images/illustration-hero.svg" alt="">
-			</section>
+			</figure>
 			<section class="order">
 				<div class="order-info">
 					<h1>Order Summary</h1>
@@ -31,21 +30,22 @@
 				</div>
 				<div class="plan">
 					<img src="./images/icon-music.svg" alt="">
-					<h2>Annual Plan</h2>
-					<p>$59.99/year</p>
-					<a href="#">Change</a>
+					<div class="plan-desc">
+						<h2 class="plan-name">Annual Plan</h2>
+						<p class="plan-price">$59.99/year</p>
+					</div>
+					<a href="#" class="plan-change-btn">Change</a>
 				</div>
 				<div class="btn-group">
-					<button class="enter-btn">Proceed to Payment</button>
-					<button class="cancel-btn">Cancel Order</button>
+					<button class="btn enter-btn">Proceed to Payment</button>
+					<button class="btn cancel-btn">Cancel Order</button>
 				</div>
 			</section>
 		</article>
 	</main>
 	<footer class="attribution">
 		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-		Coded by <a href="#">Your Name Here</a>.
+		Coded by <a href="https://github.com/AnthonyMuneneAM">Anthony Munene</a>.
 	</footer>
-	
 </body>
 </html>

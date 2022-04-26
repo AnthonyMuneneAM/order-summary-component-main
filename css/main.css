@@ -4,6 +4,7 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --purple: hsl(245, 83%, 68%);
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
@@ -14,6 +15,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     min-height: 100vh;
     font-size: 16px;
     background-image: url('../images/pattern-background-desktop.svg');
@@ -25,13 +27,16 @@ body{
     width: 400px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .card .music-img img{
     max-width: 100%;
     margin-bottom: 1.3rem;
 }
 .card .order{
-    padding: 1.1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: .5rem;
     text-align: center;
 }
 .card .order .order-info{
@@ -41,23 +46,83 @@ body{
     font-size: 1.8rem;
     color: var(--dark-blue);
     margin-bottom: 1rem;
+    font-weight: 900;
 }
 .card .order .order-info p{
     color: var(--desaturated-blue);
     line-height: 1.6rem;
+    font-weight: 500;
 }
 .card .order .plan{
     background-color: var(--very-pale-blue);
+    margin-bottom: 2rem;
+    padding: 1rem 1.3rem;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
-.card .order .btn-group button{
+.card .order .plan img{
+    margin-right: 1rem;
+}
+.card .order .plan .plan-desc{
+    text-align: left;
+    margin-right: auto;
+}
+.card .order .plan .plan-desc h2{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: .15rem;
+    color: var(--dark-blue);
+}
+.card .order .plan .plan-desc p{
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+.card .order .plan .plan-change-btn{
+    color: var(--bright-blue);
+}
+.card .order .plan .plan-change-btn:hover{
+    color: var(--purple);
+    text-decoration: none;
+}
+.card .order .btn-group .btn{
     display: block;
     padding: 10px 24px;
     cursor: pointer;
     width: 100%;
     text-align: center;
+    border: none;
+    height: 3rem;
+    border-radius: .8rem;
 }
-.card .order .btn-group #enter-btn{
+.card .order .btn-group .enter-btn{
     background-color: var(--bright-blue);
-    border-radius: 6px;
-    border-width: 0;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card .order .btn-group .enter-btn:hover{
+    background-color: var(--purple);
+}
+.card .order .btn-group .cancel-btn{
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.card .order .btn-group .cancel-btn:hover{
+    color: var(--dark-blue);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .8rem;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
 }
