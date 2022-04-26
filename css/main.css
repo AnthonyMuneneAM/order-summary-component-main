@@ -101,6 +101,7 @@ body{
     color: #fff;
     font-weight: 700;
     margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 .card .order .btn-group .enter-btn:hover{
     background-color: var(--purple);
