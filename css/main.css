@@ -9,7 +9,7 @@
     font-family: 'Red Hat Display', sans-serif;
     box-sizing: border-box;
 }
-main{
+body{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,7 @@ main{
     background-color: #fff;
     width: 400px;
     border-radius: 20px;
+    overflow: hidden;
 }
 .card .music-img img{
     max-width: 100%;
@@ -43,7 +44,20 @@ main{
 }
 .card .order .order-info p{
     color: var(--desaturated-blue);
+    line-height: 1.6rem;
 }
 .card .order .plan{
     background-color: var(--very-pale-blue);
+}
+.card .order .btn-group button{
+    display: block;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.card .order .btn-group #enter-btn{
+    background-color: var(--bright-blue);
+    border-radius: 6px;
+    border-width: 0;
 }
